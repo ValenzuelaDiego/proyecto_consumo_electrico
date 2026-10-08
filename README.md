@@ -18,13 +18,13 @@ RandomForestRegressor dentro de un Pipeline con ColumnTransformer (StandardScale
 Se eligió Random Forest por su capacidad de capturar relaciones no lineales y su robustez frente a la multicolinealidad entre variables de temperatura.
 
 ## Resultado
-### Escenario 1 (solo producción de producto A más variables meteorológicas)
-MAE: 1500.25 KWh
-RMSE: 2015.18 KWh
+#### Escenario 1 (solo producción de producto A más variables meteorológicas)
+MAE: 1500.25 KWh; 
+RMSE: 2015.18 KWh; 
 MAPE: 7.22%
-### Escenario 2 (producción de producto A y producto B más variables meteorológicas)
-MAE: 764.88 kWh
-RMSE: 1018.16 kWh
+#### Escenario 2 (producción de producto A y producto B más variables meteorológicas)
+MAE: 764.88 kWh; 
+RMSE: 1018.16 kWh; 
 MAPE: 3.77%
 
 Incluir la producción del producto B reduce el error casi a la mitad. El análisis de importancia de variables confirma que producto A (65%) y producto B (17%) son las variables más determinantes, mientras que día de la semana y feriados resultan irrelevantes (consiste que la planta opera de forma continua). Se selecciono el modelo del Escenario 2 como modelo final.
